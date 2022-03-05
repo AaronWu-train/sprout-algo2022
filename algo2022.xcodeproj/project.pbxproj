@@ -41,7 +41,7 @@
 		BA14099F27D33C610057AAB1 = {
 			isa = PBXGroup;
 			children = (
-				BA1409AA27D33C610057AAB1 /* algo2022 */,
+				BA1409AA27D33C610057AAB1 /* 0305 */,
 				BA1409A927D33C610057AAB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA1409AA27D33C610057AAB1 /* algo2022 */ = {
+		BA1409AA27D33C610057AAB1 /* 0305 */ = {
 			isa = PBXGroup;
 			children = (
 				BA1409AB27D33C610057AAB1 /* main.cpp */,
 			);
-			path = algo2022;
+			path = 0305;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
