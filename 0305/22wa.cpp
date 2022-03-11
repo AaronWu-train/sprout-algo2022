@@ -16,9 +16,9 @@ int main() {_
     while (t--) {
         int n;
         cin >> n;
-        vector<int>high;
-        vector<int>value;
-        stack<int>canBeAns;
+        vector<ll>high;
+        vector<ll>value;
+        stack<ll>canBeAns;
         ll ans = 0;
         for (int i = 0; i < n; i++) {
             int temp;

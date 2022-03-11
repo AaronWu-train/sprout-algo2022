@@ -24,7 +24,7 @@ int main() {_
     cin >> n >> m;
     vector<linked_list>arr(n+5);
     for (int h = 0; h < m; h++) {
-        for (int i = 1; i <= n; ++i) {
+        for (int i = 1; i <= n; ++i) {\
             auto& ls = arr[i];
             if (ls.start->next==NULL) {
                printf("queue %d: empty\n",i);
