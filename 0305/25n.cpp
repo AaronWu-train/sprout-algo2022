@@ -24,6 +24,20 @@ int main() {_
     cin >> n >> m;
     vector<linked_list>arr(n+5);
     for (int h = 0; h < m; h++) {
+        for (int i = 1; i <= n; ++i) {
+            auto& ls = arr[i];
+            if (ls.start->next==NULL) {
+               printf("queue %d: empty\n",i);
+            }else{
+                printf("queue %d:",i);
+                auto cur = ls.start->next;
+                while (cur!=NULL) {
+                    cout << " " << cur->num;
+                    cur = cur->next;
+                }
+                cout << endl;
+            }
+        }
         string type;
         cin >> type;
         if (type[0]=='A') {
@@ -37,30 +51,39 @@ int main() {_
             cin >> i;
             auto temp = arr[i].start->next;
             if (!temp) {
-                printf("queue %d is empty!\n",i);
+                cout << "queue "<<i<<" is empty!\n";
+//                printf("queue %d is empty!\n",i);
             }else{
-                arr[i].start->next=temp->next;
-                if (temp==arr[i].end) {
+                if (temp->next == NULL) {
                     arr[i].end=arr[i].start;
+                    arr[i].start->next=NULL;
+                    continue;
                 }
+                arr[i].start->next = temp->next;
                 delete temp;
             }
         }else if(type[0]=='J'){
             int i,j;
             cin >> i >> j;
-            auto tem1 = arr[i].start->next;
+            auto tem1 = arr[i].start -> next;
+            if (tem1==NULL||i==j) {
+                continue;
+            }
             arr[j].end->next=tem1;
-            arr[j].end=arr[i].end;
+            arr[j].end = arr[i].end;
             arr[i].start->next = NULL;
             arr[i].end = arr[i].start;
         }
+        
     }
     for (int i = 1; i <= n; ++i) {
         auto& ls = arr[i];
         if (ls.start->next==NULL) {
-           printf("queue %d: empty\n",i);
+            cout << "queue " << i << ": empty\n";
+//           printf("queue %d: empty\n",i);
         }else{
-            printf("queue %d:",i);
+//            printf("queue %d:",i);
+            cout << "queue " << i <<":";
             auto cur = ls.start->next;
             while (cur!=NULL) {
                 cout << " " << cur->num;
