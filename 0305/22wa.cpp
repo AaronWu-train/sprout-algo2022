@@ -15,7 +15,7 @@ int main() {_
     cin >> t;
     while (t--) {
         int n;
-        cin >> n;
+        cin >> n;w
         vector<ll>high;
         vector<ll>value;
         stack<ll>canBeAns;
