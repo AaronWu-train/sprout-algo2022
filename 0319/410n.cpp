@@ -3,6 +3,7 @@
 #include <bitset>
 
 using namespace std;
+
 bitset<1500>tried[1500];
 bitset<1500>inArea;
 int areasize = 0;
@@ -32,8 +33,12 @@ int hasEdge(int a, int b){
             }
             areasize++;
             inArea[b]=1;
+//            tried[a][b]=1;
+//            tried[b][a]=1;
             return 1;
         }else{
+//            tried[a][b]=1;
+//            tried[b][a]=1;
             return 0;
         }
     }else if (inArea[b]){
@@ -44,15 +49,19 @@ int hasEdge(int a, int b){
             }
             areasize++;
             inArea[a]=1;
+//            tried[a][b]=1;
+//            tried[b][a]=1;
             return 1;
         }else{
+//            tried[a][b]=1;
+//            tried[b][a]=1;
             return 0;
         }
     }
     else return 0;
 }
 
-
+//
 //
 //int main(){
 //    cin >> k;

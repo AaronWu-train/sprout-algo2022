@@ -11,5 +11,6 @@ int main() {
     for(int i = 0; i < 25 ;++i){
         cout << times[i] << " ";
     }
+    
     cout << times[25];
 } 
