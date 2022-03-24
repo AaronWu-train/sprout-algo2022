@@ -9,18 +9,18 @@ bitset<1500>inArea;
 int areasize = 0;
 int areaasked[1500];
 int k;
-void initialize(int n){
+void initialize(int n) {
     k = n;
 }
 
-int hasEdge(int a, int b){
+int hasEdge(int a, int b) {
     if (areasize==0) {
         inArea[a]=1;
         inArea[b]=1;
         areasize = 2;
         return 1;
     }
-    if ((!inArea[a]) && (!inArea[b])){
+    if ( (!inArea[a]) && (!inArea[b]) ) {
         tried[a][b]=1;
         tried[b][a]=1;
         return 0;
@@ -36,12 +36,12 @@ int hasEdge(int a, int b){
 //            tried[a][b]=1;
 //            tried[b][a]=1;
             return 1;
-        }else{
+        } else {
 //            tried[a][b]=1;
 //            tried[b][a]=1;
             return 0;
         }
-    }else if (inArea[b]){
+    } else if (inArea[b]) {
         areaasked[a]++;
         if (areaasked[a]>=areasize) {
             for (int i = 0; i <=k; ++i) {
@@ -52,7 +52,7 @@ int hasEdge(int a, int b){
 //            tried[a][b]=1;
 //            tried[b][a]=1;
             return 1;
-        }else{
+        } else {
 //            tried[a][b]=1;
 //            tried[b][a]=1;
             return 0;
