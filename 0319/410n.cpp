@@ -1,7 +1,9 @@
 #include <vector>
 #include <iostream>
 #include <bitset>
+#include <algorithm>
 
+//#include "lib1896.h"
 using namespace std;
 
 bitset<1500>tried[1500];
@@ -11,6 +13,10 @@ int areaasked[1500];
 int k;
 void initialize(int n) {
     k = n;
+    inArea.reset();
+    areasize = 0;
+    memset(areaasked, 0, 1500*sizeof(int));
+    memset(tried, 0, 1500*sizeof(bitset<1500>));
 }
 
 int hasEdge(int a, int b) {
@@ -33,12 +39,8 @@ int hasEdge(int a, int b) {
             }
             areasize++;
             inArea[b]=1;
-//            tried[a][b]=1;
-//            tried[b][a]=1;
             return 1;
         } else {
-//            tried[a][b]=1;
-//            tried[b][a]=1;
             return 0;
         }
     } else if (inArea[b]) {
