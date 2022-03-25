@@ -8,8 +8,8 @@
 #define ll long long int
 #define debug(x) cerr<<#x<<" = "<<(x)<<endl
 #define _ ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
-#define R 4 //100
-#define Y 2 //010
+#define R 4   //100
+#define Y 2  //010
 #define B 1 //001
 typedef char int8;
 using namespace std;
