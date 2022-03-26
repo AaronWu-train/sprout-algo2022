@@ -13,13 +13,17 @@
 #define B 1 //001
 typedef char int8;
 using namespace std;
-map<char, int8>colorTable = {{'Y',Y},{'R',R},{'B',B},{'O',R|Y},{'P',R|B},{'G',B|Y},{'D',7}};
+map<char, int8>colorTable = {{'Y',Y},{'R',R},{'B',B},{'O',(R|Y)},{'P',(R|B)},{'G',(B|Y)},{'D',7}};
+
+int dx[] = {0,0,-1,1,-1,1,-1,1};
+int dy[] = {-1,1,0,0,-1,-1,1,1};
+
 struct node{
     int x;
     int y;
     int time;
-    int8 color;
-    node(int x,int y,int time,int8 color):x(x),y(y),time(time),color(color){};
+    int8 color = 0;
+    node(int x,int y,int time,int8 color = 0) : x(x),y(y),time(time),color(color){};
 };
 
 int main() {_
@@ -44,13 +48,41 @@ int main() {_
             cin >> type >> x >> y;
             x++;
             y++;
+            graph[x][y] = colorTable[type];
             bfs.push(node(x,y,0,colorTable[type]));
         }
         char tem;
         cin >> tem;
         int8 chosencolor = colorTable[tem];
+        int colorMax = 0;
+        int curtime = (__builtin_popcount(chosencolor) == 1);
+        int curMax = (__builtin_popcount(chosencolor) == 1);
         
-        
+        while (bfs.size()) {
+            while (bfs.size()&& curtime >= bfs.front().time) {
+                int& x = bfs.front().x;
+                int& y = bfs.front().y;
+                int8& nowcolor = bfs.front().color;
+
+                for (int i = 0; i < 8; i++) {
+                    int8& next = graph[x + dx[i]][y + dy[i]];
+                    if ((next | nowcolor) == next) continue;
+                    if (next==chosencolor) {
+                        curMax--;
+                    }
+                    next |= nowcolor;
+                    if (next==chosencolor) {
+                        curMax++;
+                    }
+                    bfs.push(node(x + dx[i],y + dy[i], curtime+1, next));
+                }
+
+                bfs.pop();
+            }
+            colorMax = max(curMax, colorMax);
+            curtime++;
+        }
+        cout << colorMax << endl;
         
     }
     
