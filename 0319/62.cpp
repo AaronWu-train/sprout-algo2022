@@ -18,10 +18,25 @@ vector<pair<int, int>>tofill;
 
 inline bool valid(int &, int &, int &);
 void printArr();
-void getArr();
+bool getArr();
 bool dfs(int);
-
-int main() {_
+int answerCount = 0;
+bool check(){
+    bitset<10>t[9];
+    bitset<10>e[9];
+    for (int i = 0; i < 9; ++i) {
+        for (int j = 0; j < 9; ++j) {
+            if (arr[i][j]){
+                if (t[i][arr[i][j]]) return 0;
+                else t[i][arr[i][j]] = 1;
+                if (e[j][arr[i][j]]) return 0;
+                else e[j][arr[i][j]] = 1;
+            }
+        }
+    }
+    return 1;
+}
+int main() {
     int t;
     cin >> t;
     while (t--) {
@@ -34,8 +49,11 @@ int main() {_
         for (auto &i : small_area) {
             i.reset();
         }
-        getArr();
         
+        if (!getArr()||!check()) {
+            cout << "No solution."<<endl;
+            continue;
+        }
         if (tofill.empty()) printArr();
         else {
             bool m = dfs(0);
@@ -74,21 +92,22 @@ void printArr(){
     cout << endl;
 }
 
-void getArr(){
+bool getArr(){
     string temp;
     cin >> temp;
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
             if (temp[9*i+j] == '.') arr[i][j] = 0;
             else arr[i][j] = temp[9*i+j]-'0';
-            
             if (arr[i][j]!=0) {
+                if (small_area[whicharea[i][j]-'0'][arr[i][j]]) return 0;
                 small_area[whicharea[i][j]-'0'][arr[i][j]] = 1;
             }else{
                 tofill.push_back(make_pair(i, j));
             }
         }
     }
+    return 1;
 }
 
 bool dfs(int index){
