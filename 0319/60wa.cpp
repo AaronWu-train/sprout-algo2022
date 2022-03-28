@@ -11,12 +11,12 @@
 using namespace std;
 ll a,b,c,d,s,m,T;
 
-inline ll caculate(ll curtime){
-    return (T-curtime)*a + (b-a)*(m+d*curtime);
+inline static ll caculate(ll curtime){
+    return (T-curtime)*a + (b-a)*min( ((m+d*curtime)/c), T-curtime );
 }
 
 int main() {_
-    cin >> a >> b >> c >> d >> s >> m >> T;
+    cin >> a >> b >> c >> d >> m >> s >> T;
     ll l = 0, r = T;
     while (l < r) {
         ll mid = l + (r-l)/2;
@@ -27,7 +27,9 @@ int main() {_
         }
     }
     if (caculate(l)>=s) {
-        cout << "Yes\n" << l << '\n';
+        debug(l);
+        debug(caculate(l));
+        cout << "Yes\n" << T - l << '\n';
     }else{
         cout << "No\n" << caculate(l) << '\n';
     }

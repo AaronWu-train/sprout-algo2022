@@ -13,4 +13,4 @@ int main() {
     }
     
     cout << times[25];
-} 
+}
