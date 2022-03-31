@@ -26,12 +26,23 @@ int main() {_
             r = mid;
         }
     }
-    if (caculate(l)>=s) {
-        debug(l);
-        debug(caculate(l));
-        cout << "Yes\n" << T - l << '\n';
-    }else{
+    if (caculate(l)<s) {
         cout << "No\n" << caculate(l) << '\n';
+    }else{
+        r = l;
+        l = 0;
+        while (l < r) {
+            debug(1);
+            ll mid = l + (r-l)/2;
+            if (caculate(mid)>=s) {
+                r = mid;
+            }else{
+                l = mid+1;
+            }
+        }
+        debug(l);
+        cout << "Yes\n" << T - l << '\n';
+        
     }
     
     return 0;
