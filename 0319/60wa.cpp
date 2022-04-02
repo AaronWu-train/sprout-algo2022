@@ -11,8 +11,14 @@
 using namespace std;
 ll a,b,c,d,s,m,T;
 
-inline static ll caculate(ll curtime){
-    return (T-curtime)*a + (b-a)*min( ((m+d*curtime)/c), T-curtime );
+inline static ll distence(ll curtime){
+    ll maxdis = 0;
+    for (ll i = 0; i < curtime; ++i) {
+        ll curruntime = min((m+d*i)/c, curtime-i);
+        ll curdis = a*(curtime-i-curruntime)+b*(curruntime);
+        maxdis=max(maxdis, curdis);
+    }
+    return maxdis;
 }
 
 int main() {_
@@ -20,29 +26,18 @@ int main() {_
     ll l = 0, r = T;
     while (l < r) {
         ll mid = l + (r-l)/2;
-        if (caculate(mid) < caculate(mid+1)) {
-            l = mid+1;
+        if (distence(mid)>=s) {
+            r=mid;
         }else{
-            r = mid;
+            l = mid+1;
         }
     }
-    if (caculate(l)<s) {
-        cout << "No\n" << caculate(l) << '\n';
+    if (distence(l)<s){
+        cout << "No\n";
+        cout << distence(l) << '\n';
     }else{
-        r = l;
-        l = 0;
-        while (l < r) {
-            debug(1);
-            ll mid = l + (r-l)/2;
-            if (caculate(mid)>=s) {
-                r = mid;
-            }else{
-                l = mid+1;
-            }
-        }
-        debug(l);
-        cout << "Yes\n" << T - l << '\n';
-        
+        cout << "Yes\n";
+        cout << l << '\n';
     }
     
     return 0;
