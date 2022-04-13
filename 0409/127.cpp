@@ -5,8 +5,6 @@
 #include <algorithm>
 #include <climits>
 #include <bitset>
-#include <queue>
-#include <stack>
 #define All(x) begin(x),end(x)
 #define ll long long int
 #define endl '\n'
