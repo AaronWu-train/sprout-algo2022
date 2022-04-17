@@ -73,6 +73,7 @@ void Report(int x1,int y1 ,int x2 ,int y2 ,int x3 ,int y3){
     arr[x3][y3] = mcount;
 }
 
+#ifdef DEBUG
 signed main() {_
     int n,x,y;
     cin >> n >> x >> y;
@@ -85,3 +86,4 @@ signed main() {_
     }
     return 0;
 }
+#endif
