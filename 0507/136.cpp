@@ -14,7 +14,7 @@
 using namespace std;
 
 #ifdef DEBUG
-void Report(int n) {
+void Report(ll n) {
     cout << n << endl;
 }
 #endif
@@ -40,20 +40,72 @@ vector<ll>mysolve(int N, ll k, ll A[]){
 
 
 void solve(int N, ll k, ll A[]) {
-    auto ret = mysolve(N, k, A);
-    for (auto& item : ret) Report(item+1);
+    if (N <= 20) {
+        auto ret = mysolve(N, k, A);
+        for (auto& item : ret) Report(item+1);
+        Report(-1);
+        return;
+    }
+    int a = N/2;
+    ll maxa = 1ll<<a;
+    vector<pair<ll, ll>> va;
+    for (ll i = 1; i < maxa; ++i) {
+        ll sum = 0;
+        for (ll j = 0; j < N; ++j) {
+            if (i&(1ll<<j)) {
+                sum+=A[j];
+            }
+        }
+        va.push_back(make_pair(sum, i));
+    }
+    vector<pair<ll, ll>> vb;
+    
+    for (ll i = maxa; i < (1ll<<N); i+=maxa) {
+        ll sum = 0;
+        for (ll j = 0; j < N; ++j) {
+            if (i&(1ll<<j)) {
+                sum+=A[j];
+            }
+        }
+        vb.push_back(make_pair(sum, i));
+    }
+    sort(AI(va),greater<pair<ll, ll>>());
+    sort(AI(vb));
+
+
+    ll ans = 0;
+    for (auto &i : va) {
+        auto r = lower_bound(vb.begin(),vb.end(), make_pair(k-i.first, 0ll));
+        if (r == vb.end()) continue;
+        if (r->first == k-i.first) {
+//            debug(i.second);
+//            debug(r->second);
+            ans = i.second | r->second;
+//            debug(ans);
+            break;
+        }
+    }
+    for (int i=0; i < N; ++i) {
+        if ( (1ll<<i)& ans) {
+            Report(i+1);
+        }
+    }
     Report(-1);
+    
 }
 
 #ifdef DEBUG
 signed main() {_
-    int n,k;
-    cin >> n >> k;
-    ll A[41];
-    for (int i = 0; i<n; ++i) {
-        cin>>A[i];
-    }
-    solve(n, k, A);
+//    int n,k;
+//    cin >> n >> k;
+//    ll A[41];
+//    for (int i = 0; i<n; ++i) {
+//        cin>>A[i];
+//    }
+//    solve(n, k, A);
+    ll A[40];
+    for (int i = 0; i < 40; ++i) A[i] = 1;
+    solve(40, 35, A);
     return 0;
 }
 #endif
