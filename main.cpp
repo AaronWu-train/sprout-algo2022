@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <climits>
 #include <bitset>
-#define All(x) begin(x),end(x)
+#define AI(x) begin(x),end(x)
 #define ll long long int
 #define endl '\n'
 #define print(v) cerr<<#v<<": "; for(auto& n: v) cerr << n << " \n"[&n == &v.back()]
