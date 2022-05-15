@@ -13,7 +13,6 @@
 		BA50F0F0282FDD5D00F0FFF6 /* 159.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA50F0EF282FDD5D00F0FFF6 /* 159.cpp */; };
 		BA6C7BF027F0406E00ED2596 /* 60wa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6C7BEF27F0406E00ED2596 /* 60wa.cpp */; };
 		BA7BC33A27FD826A00BE59A6 /* 90.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC32327FD63A800BE59A6 /* 90.cpp */; };
-		BAA806DB282FD45D00733FA5 /* 188.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAA806DA282FD45D00733FA5 /* 188.cpp */; };
 		BAC0AD2428161F6D00D21F18 /* 357not_finish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAC0AD2328161F6D00D21F18 /* 357not_finish.cpp */; };
 		BADA1C0E2806C2A400F41320 /* 795.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAE5653C28030BA8008701F1 /* 795.cpp */; };
 /* End PBXBuildFile section */
@@ -574,7 +573,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA806DB282FD45D00733FA5 /* 188.cpp in Sources */,
 				BA50F0F0282FDD5D00F0FFF6 /* 159.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
