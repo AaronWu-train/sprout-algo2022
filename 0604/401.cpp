@@ -36,7 +36,7 @@ ll abs(pt a) {
     return a*a;
 }
 int sign(ll a){
-//    if (fabs(a) < eps) return 0;
+    if (fabs(a) < eps) return 0;
     return a > 0 ? 1: -1;
 }
 int ori (const pt& o, const pt& a, const pt& b) {
@@ -56,34 +56,18 @@ bool banana(const pt& p1, const pt& p2, const pt& p3, const pt& p4) {
         return btw(p1, p2, p3) || btw(p1, p2, p4) || btw(p3, p4, p1) || btw(p3, p4, p2);
     }
     return a123*a124 <= 0 && a341*a342 <=0;
-
 }
 
 signed main() {_
     int n;
-    cin >> n;
-    vector<pt>arr;
-    for(int i = 0; i < n; ++i){
-        pt a;
-        cin >> a.X >> a.Y;
-        arr.push_back(a);
-    }
-    ll left = 0;
-    ll bck  = 0;
-    ll right= 0;
-    for (int i = 0; i < n-2; ++i) {
-        if (sign( (arr[i+1] - arr[i]) ^ (arr[i+2] - arr[i+1]) ) > 0) {
-            left++;
-        }
-        else if (sign( (arr[i+1] - arr[i]) ^ (arr[i+2] - arr[i+1])) < 0 ) {
-            right++;
-        }
-        else {
-            if ( sign( (arr[i+1] - arr[i]) * (arr[i+2] - arr[i+1])) <0 ) {
-                bck++;
-            }
+    cin >>n ;
+    while (n--) {
+        pt a,b,c,d;
+        cin >> a.X >> a.Y >> b.X >> b.Y >> c.X >> c.Y >> d.X >> d.Y;
+        if (banana(a, b, c, d)) {
+            cout << "Yes\n" ;
+        }else{
+            cout << "No\n";
         }
     }
-    cout << left<< " " << right << " "<< bck << endl;
-    return 0;
 }
