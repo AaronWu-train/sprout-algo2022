@@ -12,6 +12,7 @@
 		BA250DCA27DAEB8A008AD05A /* 22n.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA250DC927DAEB54008AD05A /* 22n.cpp */; };
 		BA6C7BF027F0406E00ED2596 /* 60wa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA6C7BEF27F0406E00ED2596 /* 60wa.cpp */; };
 		BA7BC33A27FD826A00BE59A6 /* 90.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC32327FD63A800BE59A6 /* 90.cpp */; };
+		BA7CC8F2285CAB0F00CB6204 /* 259.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA7CC8F1285CAB0F00CB6204 /* 259.cpp */; };
 		BA9149C328503DA300358850 /* 402.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9149C228503DA300358850 /* 402.cpp */; };
 		BA9149C5285093AD00358850 /* 394.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9149C4285093AD00358850 /* 394.cpp */; };
 		BA9B12762837CCDA0082E8E0 /* 185.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9B12752837CCDA0082E8E0 /* 185.cpp */; };
@@ -112,6 +113,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		BAE39C93285AA70100AE1754 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		BAF5029528017E3500949F02 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +187,11 @@
 		BA76E55D284B51EF0098400E /* 399.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 399.cpp; sourceTree = "<group>"; };
 		BA76E55F284B59270098400E /* 401.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 401.cpp; sourceTree = "<group>"; };
 		BA7BC32327FD63A800BE59A6 /* 90.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 90.cpp; sourceTree = "<group>"; };
+		BA7BC84E285C2BD900EF7D90 /* 249.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 249.cpp; sourceTree = "<group>"; };
+		BA7CC8ED285C9BA300CB6204 /* 367.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 367.cpp; sourceTree = "<group>"; };
+		BA7CC8EF285CA68800CB6204 /* 368.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 368.cpp; sourceTree = "<group>"; };
+		BA7CC8F1285CAB0F00CB6204 /* 259.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 259.cpp; sourceTree = "<group>"; };
+		BA7CC8F3285D4FF400CB6204 /* lib1895.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib1895.h; sourceTree = "<group>"; };
 		BA7EE7D2284B640900345BCE /* 400.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 400.cpp; sourceTree = "<group>"; };
 		BA9149C228503DA300358850 /* 402.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 402.cpp; sourceTree = "<group>"; };
 		BA9149C4285093AD00358850 /* 394.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 394.cpp; sourceTree = "<group>"; };
@@ -207,10 +222,13 @@
 		BADA37672839EADF002388E0 /* 794.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 794.cpp; sourceTree = "<group>"; };
 		BADA3769283A0461002388E0 /* 793.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 793.cpp; sourceTree = "<group>"; };
 		BADA376F283BAD61002388E0 /* 740.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 740.cpp; sourceTree = "<group>"; };
+		BAE39C95285AA70100AE1754 /* 0611 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 0611; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE39C97285AA70100AE1754 /* 80.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 80.cpp; sourceTree = "<group>"; };
 		BAE5653A2802EC26008701F1 /* 125.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 125.cpp; sourceTree = "<group>"; };
 		BAE5653C28030BA8008701F1 /* 795.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 795.cpp; sourceTree = "<group>"; };
 		BAE5653E2803C6C4008701F1 /* 789.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 789.cpp; sourceTree = "<group>"; };
 		BAE9BDD528115810009A6810 /* 172.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 172.cpp; sourceTree = "<group>"; };
+		BAEE33E5285C4B46003029AE /* 257.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 257.cpp; sourceTree = "<group>"; };
 		BAF5029728017E3500949F02 /* 0409 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 0409; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF5029928017E3600949F02 /* 124.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 124.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,6 +304,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAE39C92285AA70100AE1754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF5029428017E3500949F02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +349,7 @@
 				BADA375E2838C37F002388E0 /* 0521 */,
 				BAB2F9DB284A41D700BF12F6 /* 0528 */,
 				BAB2F9EC284B4B9C00BF12F6 /* 0604 */,
+				BAE39C96285AA70100AE1754 /* 0611 */,
 				BA1409A927D33C610057AAB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -342,6 +368,7 @@
 				BADA375D2838C37F002388E0 /* 0521 */,
 				BAB2F9DA284A41D700BF12F6 /* 0528 */,
 				BAB2F9EB284B4B9C00BF12F6 /* 0604 */,
+				BAE39C95285AA70100AE1754 /* 0611 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -472,6 +499,20 @@
 				BADA376F283BAD61002388E0 /* 740.cpp */,
 			);
 			path = 0521;
+			sourceTree = "<group>";
+		};
+		BAE39C96285AA70100AE1754 /* 0611 */ = {
+			isa = PBXGroup;
+			children = (
+				BAE39C97285AA70100AE1754 /* 80.cpp */,
+				BA7BC84E285C2BD900EF7D90 /* 249.cpp */,
+				BAEE33E5285C4B46003029AE /* 257.cpp */,
+				BA7CC8ED285C9BA300CB6204 /* 367.cpp */,
+				BA7CC8EF285CA68800CB6204 /* 368.cpp */,
+				BA7CC8F1285CAB0F00CB6204 /* 259.cpp */,
+				BA7CC8F3285D4FF400CB6204 /* lib1895.h */,
+			);
+			path = 0611;
 			sourceTree = "<group>";
 		};
 		BAF5029828017E3600949F02 /* 0409 */ = {
@@ -660,6 +701,23 @@
 			productReference = BADA375D2838C37F002388E0 /* 0521 */;
 			productType = "com.apple.product-type.tool";
 		};
+		BAE39C94285AA70100AE1754 /* 0611 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE39C9B285AA70100AE1754 /* Build configuration list for PBXNativeTarget "0611" */;
+			buildPhases = (
+				BAE39C91285AA70100AE1754 /* Sources */,
+				BAE39C92285AA70100AE1754 /* Frameworks */,
+				BAE39C93285AA70100AE1754 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 0611;
+			productName = 0611;
+			productReference = BAE39C95285AA70100AE1754 /* 0611 */;
+			productType = "com.apple.product-type.tool";
+		};
 		BAF5029628017E3500949F02 /* 0409 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAF5029B28017E3600949F02 /* Build configuration list for PBXNativeTarget "0409" */;
@@ -684,7 +742,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					BA0E4526282F88D7004F6394 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -716,6 +774,9 @@
 					BADA375C2838C37F002388E0 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					BAE39C94285AA70100AE1754 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					BAF5029628017E3500949F02 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -745,6 +806,7 @@
 				BADA375C2838C37F002388E0 /* 0521 */,
 				BAB2F9D9284A41D700BF12F6 /* 0528 */,
 				BAB2F9EA284B4B9C00BF12F6 /* 0604 */,
+				BAE39C94285AA70100AE1754 /* 0611 */,
 			);
 		};
 /* End PBXProject section */
@@ -831,6 +893,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAE39C91285AA70100AE1754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7CC8F2285CAB0F00CB6204 /* 259.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF5029328017E3500949F02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,6 +915,7 @@
 		BA0E452C282F88D7004F6394 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -854,6 +925,7 @@
 		BA0E452D282F88D7004F6394 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -974,6 +1046,7 @@
 		BA1409B027D33C610057AAB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -982,6 +1055,7 @@
 		BA1409B127D33C610057AAB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -990,6 +1064,7 @@
 		BA250DD327DC498B008AD05A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -998,6 +1073,7 @@
 		BA250DD427DC498B008AD05A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1006,6 +1082,7 @@
 		BA27697427E5C71200F7B01C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1015,6 +1092,7 @@
 		BA27697527E5C71200F7B01C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1024,6 +1102,7 @@
 		BA3A47D5280A97F500152714 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1033,6 +1112,7 @@
 		BA3A47D6280A97F500152714 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1043,6 +1123,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1053,6 +1134,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1062,6 +1144,7 @@
 		BAB2F9F0284B4B9C00BF12F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1071,6 +1154,7 @@
 		BAB2F9F1284B4B9C00BF12F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1080,6 +1164,7 @@
 		BAC5E1FD2826418D00BDD62B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1089,6 +1174,7 @@
 		BAC5E1FE2826418D00BDD62B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1098,6 +1184,7 @@
 		BAD327C527F827D300A2E629 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1107,6 +1194,7 @@
 		BAD327C627F827D300A2E629 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1117,6 +1205,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1127,6 +1216,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAE39C99285AA70100AE1754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAE39C9A285AA70100AE1754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1136,6 +1246,7 @@
 		BAF5029C28017E3600949F02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U27TTTUZQ2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1147,6 +1258,7 @@
 		BAF5029D28017E3600949F02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U27TTTUZQ2;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1253,6 +1365,15 @@
 			buildConfigurations = (
 				BADA37612838C37F002388E0 /* Debug */,
 				BADA37622838C37F002388E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE39C9B285AA70100AE1754 /* Build configuration list for PBXNativeTarget "0611" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE39C99285AA70100AE1754 /* Debug */,
+				BAE39C9A285AA70100AE1754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
