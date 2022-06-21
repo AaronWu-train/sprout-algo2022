@@ -106,6 +106,7 @@ void buildWall(int n, int k, int op[], int l[], int r[], int h[], int finalHeigh
 
 
 signed main() {_
+//    cout << __lg(10);
     int n, m;
     cin >> n >> m;
     seg.init(n);

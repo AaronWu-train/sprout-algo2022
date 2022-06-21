@@ -36,9 +36,8 @@ struct SegmentTree{
             st[i].value = max(st[i*2].value, st[i*2+1].value);
         }
     }
-    
     void pull (int i) {
-        if (i==1) return;
+        if (i == 1) return;
         pull(i>>1);
         st[i].add(st[i>>1].tag);
         st[i^1].add(st[i>>1].tag);
@@ -48,7 +47,7 @@ struct SegmentTree{
         i >>= 1;
         while (i) {
             st[i].value = max(st[i*2].value, st[i*2+1].value);
-            i>>=1;
+            i >>=1 ;
         }
     }
     ll query(int l, int r){
