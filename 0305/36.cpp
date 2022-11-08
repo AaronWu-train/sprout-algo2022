@@ -9,7 +9,6 @@
 #define _ ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 using namespace std;
 
-
 int main() {_
     int t;
     cin >> t;
@@ -30,12 +29,6 @@ int main() {_
             }
         }
     }
-    
-    
-    
-    
-    
-    
     return 0;
 }
 
