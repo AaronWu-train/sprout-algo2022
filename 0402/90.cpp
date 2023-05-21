@@ -11,7 +11,7 @@
 #define endl '\n'
 #define _ ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 
-#ifdef DEBUG
+#ifdef AaW
 #   define debug(x) cerr<<#x<<" = "<<(x)<<endl
 #else
 #   define debug(x) 0
